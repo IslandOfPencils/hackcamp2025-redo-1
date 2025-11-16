@@ -1,0 +1,161 @@
+.filter-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.filter-title {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #2d3436;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 0.9rem;
+}
+
+.filter-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.filter-label {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #2d3436;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.budget-options {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.budget-btn {
+  flex: 1;
+  padding: 0.75rem;
+  border: 2px solid #e8e8e8;
+  background: white;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  color: #636e72;
+}
+
+.budget-btn:hover {
+  border-color: #2d3436;
+}
+
+.budget-btn.active {
+  background: #2d3436;
+  color: white;
+  border-color: #2d3436;
+}
+
+.rating-slider-container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.rating-slider {
+  flex: 1;
+  height: 6px;
+  border-radius: 3px;
+  background: #e8e8e8;
+  outline: none;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.rating-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #2d3436;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.rating-slider::-moz-range-thumb {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #2d3436;
+  cursor: pointer;
+  border: none;
+}
+
+.rating-slider:hover::-webkit-slider-thumb {
+  background: #000;
+}
+
+.rating-value {
+  font-size: 0.85rem;
+  color: #636e72;
+  min-width: 70px;
+  text-align: right;
+}
+
+.dietary-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.dietary-checkbox {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  cursor: pointer;
+  padding: 0.5rem;
+  border-radius: 6px;
+  transition: background 0.2s ease;
+}
+
+.dietary-checkbox:hover {
+  background: #f5f5f5;
+}
+
+.dietary-checkbox input {
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+  accent-color: #2d3436;
+}
+
+.dietary-checkbox span {
+  font-size: 0.9rem;
+  color: #2d3436;
+  user-select: none;
+}
+
+.reset-filters {
+  padding: 0.75rem 1rem;
+  background: #f5f5f5;
+  border: 1px solid #e8e8e8;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #636e72;
+  transition: all 0.3s ease;
+  margin-top: 0.5rem;
+}
+
+.reset-filters:hover {
+  background: #e8e8e8;
+  color: #2d3436;
+}
+
+@media (max-width: 768px) {
+  .filter-panel {
+    gap: 1rem;
+  }
+}
