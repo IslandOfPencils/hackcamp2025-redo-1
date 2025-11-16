@@ -1,0 +1,1 @@
+hello, this is a text file in my base project folder
